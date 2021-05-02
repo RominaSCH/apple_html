@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    margin: 10px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+h3{
+    font-size: 20px;
+}
+.mention{
+    margin: 10px 0;
+    color: #fff;
+    background-color: silver;
+    width: 500px;
+    height: 300px;
+    padding: 20px;
+    font-size: 20px;
+    border: 2px solid darkslateblue;
+    border-radius: 10px;
+}
+p{
+    margin-top: 10px;
+}
