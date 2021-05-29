@@ -55,9 +55,11 @@
 }  */
 .added-goods{
     width: 80%;
-    height: 200px;
+    max-width: 600px;
+    /*반응형 웹 만들 때 max-width 많이 씀*/
+    height: auto;
     padding: 20px 80px;
-    background-color: silver;
+    background-color: whitesmoke;
     text-align: center;
     position: absolute;
     left: 0;
@@ -70,3 +72,5 @@
     font-weight: 700;
     margin-bottom: 20px;
 }
+/* reset css site 참조 */
+/* https://github.com/necolas/normalize.css/blob/master/normalize.css */
