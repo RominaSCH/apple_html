@@ -1,8 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;700&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Noto Serif KR', serif;
 }
+ul{
+    list-style: none;
+    display: block;
+    background-color: burlywood;
+    width: 100%;
+    padding: 10px 20px;
+}
+li{
+    display: inline-block;
+    margin-right: 20px;
+    transition: .2s ease-in-out;
+    padding: 3px 8px;
+    border-radius: 3px;
+}
+li:hover{
+    background-color: #fff;
+    transform: scale(1.1);
+
+}
+
+
+
+
 .container{
     width: 600px;
     height: 200px;
@@ -37,6 +62,7 @@
 .content-text__title{
     font-size: 18px;
     margin-bottom: 5px;
+    font-weight: 700;
 }
 .content-text__para{
     font-size: 13px;
@@ -46,18 +72,19 @@
     position: relative;
 }
 .right-content > img{
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
 }
 .plus-badge{
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
     background-color: rgba(0,0,0,.7);
     color: #fff;
-    bottom: 0;
+    bottom: 0px;
     right: 0;
 }
