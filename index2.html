@@ -60,7 +60,9 @@
                   <div class="input-title">Message</div>
                   <textarea required></textarea>
                   <div class="checkbox">
-                      <input type="checkbox" name="subscribe" id="subscribe"><span>Subscribe</span>
+                      <input type="checkbox" name="subscribe" id="subscribe">
+                      <label for="subscribe">Subscribe</label>
+                      <!-- label의 for기능을 쓰면 label의 text를 눌러도 checkbox가 기능한다 -->
                   </div>
                   <input type="submit" value="submit" id="submit"/>
                 </form>
@@ -78,13 +80,12 @@
             $(".contact-form-disp").fadeIn();
         })
         $("#submit").click(function(){
-            if($("#email") == ""){
+            if($("#email").val() == ""){
+                //name 이랑 textarea 다 하면 되겠지만 생략
                 alert("Write the email");
-                //입력 안되도 그냥 폼이 display none 되버리네
             } else{
                 $(".contact-form-disp").fadeOut();
             }
-            
         })
     </script>
   </body>
