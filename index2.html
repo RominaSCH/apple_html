@@ -1,25 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style2.css">
-
-</head>
-<body>
-<div class="main-background">
-    <div class="main-text">
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <div class="main-background">
+      <div class="main-text">
         <div class="main-title">Buy your happiness</div>
-        <div class="main-info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi eaque quibusdam, suscipit doloremque deserunt quam cum? Repudiandae corporis animi quam molestiae error sapiente laboriosam exercitationem, aperiam illo officiis inventore temporibus.</div>
-        
-    </div>
-    <button class="main-btn position">Buy Now</button>
-    <div class="added-goods">
+        <div class="main-info">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi
+          eaque quibusdam, suscipit doloremque deserunt quam cum? Repudiandae
+          corporis animi quam molestiae error sapiente laboriosam
+          exercitationem, aperiam illo officiis inventore temporibus.
+        </div>
+      </div>
+      <button class="main-btn position">Buy Now</button>
+      <div class="added-goods">
         <div class="added-title">90% SALE</div>
-        <div class="added-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, doloribus ipsa inventore veritatis fuga beatae, voluptatum unde dignissimos quaerat dolorem repellendus, nam aperiam. Incidunt dolore totam aut necessitatibus nulla earum?</div>
+        <div class="added-text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium,
+          doloribus ipsa inventore veritatis fuga beatae, voluptatum unde
+          dignissimos quaerat dolorem repellendus, nam aperiam. Incidunt dolore
+          totam aut necessitatibus nulla earum?
+        </div>
+      </div>
     </div>
-</div>
-</body>
+    <div>
+      <footer>
+        <div class="contact">Contact Us</div>
+        <div class="contact-form-disp">
+            <div class="contact-form">
+                <form>
+                    <div class="input-title">Your Email</div>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="abs8084@gmail.com"
+                    required
+                  />
+                  <div class="input-names">
+                      <div class="first-name">
+                          <div class="input-title">First Name</div>
+                          <div class="first-name_input">
+                              <input required type="text" name="first-name" id="first-name">
+                          </div>
+                      </div>
+                      <div class="last-name">
+                          <div class="input-title">Last Name</div>
+                          <div class="last-name_input">
+                              <input required type="text" name="last-name" id="last-name">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="input-title">Message</div>
+                  <textarea required></textarea>
+                  <div class="checkbox">
+                      <input type="checkbox" name="subscribe" id="subscribe"><span>Subscribe</span>
+                  </div>
+                  <input type="submit" value="submit" id="submit"/>
+                </form>
+              </div>
+        </div>
+      </footer>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+        $(".contact").click(() => {
+            $(".contact-form-disp").fadeIn();
+        })
+        $("#submit").click(function(){
+            if($("#email") == ""){
+                alert("Write the email");
+                //입력 안되도 그냥 폼이 display none 되버리네
+            } else{
+                $(".contact-form-disp").fadeOut();
+            }
+            
+        })
+    </script>
+  </body>
 </html>
