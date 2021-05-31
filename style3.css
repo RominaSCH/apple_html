@@ -1,9 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+@font-face{
+    font-family: "배민체";
+    src: url(./BMDOHYEON_ttf.ttf);
+    /*파일용량이 좀 큼.*/
+    /* 호환성을 위해서는 eot, woff(웹용폰트 용량 가벼움), ttf 전부 첨부*/
+}
+/* @font-face { 
+    font-family: 'NanumSquare'; 
+    font-weight: 400; 
+    src: url(NanumSquareR.eot); 
+    src: url(NanumSquareR.eot?#iefix) format('embedded-opentype'), 
+        url(NanumSquareR.woff) format('woff'), 
+        url(NanumSquareR.ttf) format('truetype'); 
+  } IE 옛 버전에서도 호환성 좋게 폰트를 사용하려면 이렇게 한다.*/
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    font-family: 'Noto Serif KR', serif;
+    font-family: "배민체";
+    /* font-family: 'Poppins', sans-serif; */
 }
 a, a:visited{
     text-decoration: none;
@@ -49,6 +64,7 @@ td{
 }
 .half-opac{
     color:rgba(0,0,0,.7);
+    transform: rotate(0.05deg); /*smoothing tip!*/
 }
 .bold-text{
     font-weight: 700;
