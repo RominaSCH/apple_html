@@ -1,25 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;700&display=swap');
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: 'Noto Serif KR', serif;
 }
-a, a:visited{
-    text-decoration: none;
-    color: #000;
+body{
+    background-color: skyblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 table{
     border-collapse: collapse;
+    width: 80%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.table-title{
+    color: darkblue;
+    margin: 20px;
+    font-size: 30px;
+    font-weight: 700;
+}
+.tr-title{
+    font-weight: 700;
 }
 td, th{
-    border: 1px solid silver;
-    padding: 8px;
+    border-bottom: 1px solid silver;
+    padding: 15px;
 }
 th{
     text-align: center; /* th는 text-align: center; 가 기본*/
 }
 td{
-    text-align: left;
-    vertical-align: top; /*자주쓰니 알아둘것*/
+    text-align: center;
+    vertical-align: middle; /*자주쓰니 알아둘것*/
     /*inline 글씨나 그림 들의 y축 기준점을 잡고 싶을 때 씀*/
     /*top middle bottom baseline +-20px 등등*/
+}
+td img{
+    width: 90px;
+    height: 90px;
+}
+.btns{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    width: 80%;
+}
+.pay-btn{
+    padding: 16px 32px;
+    border:0;
+    outline: 0;
+    background-color: slateblue;
+    color: #fff;
+    border-radius: 5px;
+    font-size:16px;
 }
