@@ -1,0 +1,58 @@
+@font-face{
+    font-family: "배민체";
+    src: url(./BMDOHYEON_ttf.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "배민체";
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    max-width: 1200px;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 20px;
+    width: 220px;
+    height: 120px;
+    margin: 10px;
+}
+.box-title{
+    font-weight:900;
+    margin-bottom: 10px;
+}
+.box-content{
+    font-size: 14px;
+}
+
+@media screen and (max-width:992px) {
+    .container{
+        max-width: 800px; /*벌어지는거 방지하는 max-width 유용하구만!*/
+        flex-wrap: wrap;
+    }/*flex 써도 되고 float 써도 됨.*/
+    .box{
+        width: 45%;
+    }
+}
+@media screen and (max-width:576px) {
+    .container{
+        max-width: 500px;
+        flex-direction: column;
+    }
+    .box{
+        width: 50%;
+    }
+}

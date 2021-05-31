@@ -189,3 +189,15 @@ nav img{
     font-size: 18px;
     font-weight: 700;
 } */
+
+@media screen and (max-width:768px) {
+    .main-title{
+        font-size: 1.5rem;
+    }   /* 모바일에서 적용할 css 만 여기안에 적으면 반응형! */
+}
+
+/* bootstrap 디자인 라이브러리에서 사용하는 breakpoint
+1200px  태블릿
+992px  태블릿
+768px 태블릿(모바일)
+576px 모바일 */
