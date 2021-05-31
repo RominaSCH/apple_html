@@ -40,6 +40,12 @@ td{
     /*inline 글씨나 그림 들의 y축 기준점을 잡고 싶을 때 씀*/
     /*top middle bottom baseline +-20px 등등*/
 }
+.half-opac{
+    color:rgba(0,0,0,.7);
+}
+.bold-text{
+    font-weight: 700;
+}
 td img{
     width: 90px;
     height: 90px;
