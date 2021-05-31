@@ -5,6 +5,13 @@
     box-sizing: border-box;
     font-family: 'Noto Serif KR', serif;
 }
+a, a:visited{
+    text-decoration: none;
+    color: #fff;
+    border:1px solid #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
 body{
     background-color: skyblue;
     display: flex;
@@ -57,12 +64,22 @@ td img{
     margin-top: 15px;
     width: 80%;
 }
-.pay-btn{
+.btn{ /* 클래스명을 나눠서 확장가능한 component로 만들기 */
     padding: 16px 32px;
     border:0;
     outline: 0;
-    background-color: slateblue;
-    color: #fff;
     border-radius: 5px;
     font-size:16px;
+    cursor: pointer;
+}
+.pay-btn{
+    background-color: slateblue;
+    color: #fff;
+    transition: .2s ease-in;
+}
+.pay-btn:hover{
+    background-color: hotpink;
+}
+.pay-btn:active{
+    background-color: deeppink;
 }
