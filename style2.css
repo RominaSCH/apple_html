@@ -200,24 +200,26 @@ nav img{
 }
 .item img{
     width: 100%;
-    height: 280px;
+    height: 100%;
 }
 .item-price{
     width: 100%;
-    height: 440px;
-    background:linear-gradient(rgba(255,255,255,0.1), rgba(0,0,0,.5));
+    height: 100%;
+    background: rgba(0,0,0,.5);
     color: #fff;
-    font-weight: 700;
+    opacity: 0;
     position: absolute;
     top: 0;
     left:0;
     text-align: center;
-    padding-top: 280px;
     font-size: 22px;
     transition: .2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .item-price:hover{
-    transform: translateY(-140px);
+    opacity: 1;
 }
 
 
