@@ -188,15 +188,18 @@ nav img{
     justify-content: space-evenly;
     align-items: center;
     margin: 20px;
+    flex-wrap: wrap;
+    background-color: seashell;
 }
 .item{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30%;
+    width: 300px;
     height: 280px;
     position: relative;
     overflow: hidden;
+    margin: 20px;
 }
 .item img{
     width: 100%;
@@ -204,24 +207,25 @@ nav img{
 }
 .item-price{
     width: 100%;
-    height: 100%;
+    height: 60%;
     background: rgba(0,0,0,.5);
     color: #fff;
-    opacity: 0;
     position: absolute;
     top: 0;
     left:0;
     text-align: center;
     font-size: 22px;
-    transition: .2s ease-in-out;
+    transition: .5s ease-in-out;
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding-top: 50px;
+    transform: translateY(300px);
 }
-.item-price:hover{
-    opacity: 1;
+.item:hover .item-price{
+    transform: translateY(150px);
 }
-
+/*형제간 .형제1:hover .형제2 는 곤란하다. .형제1:hover .자식 이 중요하다.*/
+/* overlay animation 만들 때 오버레이때문에 hover가 안되는 상황이 발생할 수 있음.*/
 
 /* .menus{
     display: flex;
