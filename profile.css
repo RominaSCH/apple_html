@@ -131,19 +131,18 @@ main{
 .skill-content{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 .skill{
     padding: 4px 10px;
     border: 1px solid rgba(0,0,0,.8);
     border-radius: 20px;
     margin-right: 5px;
+    margin-bottom: 10px;
 }
 
 .find{
     width: 15%;
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 20px;
 }
 .linkdin_fire > svg{
     width: 120px;
@@ -151,6 +150,9 @@ main{
     color: var(--btn-color);
 }
 .linkdin{
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -164,4 +166,70 @@ main{
 a, a:visited{
     text-decoration: none;
     color: skyblue;
+}
+.mightknow-title{
+    font-size: 18px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0,0,0,.5);
+}
+.mightknow-people{
+    padding-top: 20px;
+    display: flex;
+}
+.people-img > img{
+    margin-right: 10px;
+    width: 60px;
+    height: auto;
+    border-radius: 50%;
+}
+.people-name{
+    font-size: 18px;
+}
+.people-job{
+    font-size: 14px;
+    color: rgba(0,0,0,.5);
+}
+.people-loc {
+    display: flex;
+    align-items: center;
+    color: var(--btn-color);
+    font-size: 13px;
+}
+.people-loc > svg{
+    width: 14px;
+    margin-right: 2px;
+}
+
+@media screen and (max-width:768px) {
+    main{
+        flex-direction: column;
+    }
+    .base{
+        flex-direction: column;
+    }
+    .base_left{
+        padding-bottom: 30px;
+        border-bottom: 1px solid rgba(0,0,0,.5);
+    }
+    .base_right{
+        padding-top: 30px;
+        width: 100%;
+        justify-content: center;
+    }
+    .base_right-title{
+        border-left: 0px;
+        margin-right: 50px;
+    }
+    .works{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .main-content{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .find{
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
