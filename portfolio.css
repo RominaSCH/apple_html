@@ -143,7 +143,7 @@ a, a:visited{
 .service{
     position: relative;
     width: 700px;
-    height: auto;
+    height: 470px;
     transition: .3s;
 }
 .border-box{
@@ -152,10 +152,11 @@ a, a:visited{
     position: absolute;
     top: 0;
     left: 0;
+    transition: .3s ease-in-out;
    
 }
 .border-box:hover{
-    animation: borderFade .3s ease-in forwards;
+    border: 20px solid #fff;
 }
 .service > img{
     width: 100%;
