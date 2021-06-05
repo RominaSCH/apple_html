@@ -1,10 +1,86 @@
-@font-face {
-    font-family: "nanumBarunpenB";
-    src: url(./NanumBarunpenB.ttf);
-}
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
-    font-family: "nanumBarunpenB", serif;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+:root{
+    --single-color: #6C757D;
+    --double-color:#017BFF;
+    --triple-color:#28A745;
+    --lovers-color:#FE2222;
+}
+body{
+    background-color: lavenderblush;
+}
+.informations{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+}
+.informations > img{
+    width: 100px;
+}
+.info-title{
+    margin: 15px 0;
+}
+.info-bar{
+    width: 70px;
+    height: 5px;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+.info-texts{
+    width: 100%;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.info-dollar{
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+button{
+    outline: 0;
+    border:0;
+}
+.info-btn{
+    padding: 10px 16px;
+    border-radius: 20px;
+    color: #fff;
+}
+.single{
+    background-color: var(--single-color);
+}
+.double{
+    background-color: var(--double-color);
+}
+.triple{
+    background-color: var(--triple-color);
+}
+.lover{
+    background-color: var(--lovers-color);
+}
+.bold-single,
+.bold-double,
+.bold-triple,
+.bold-lover{
+    font-weight: bolder;
+}
+.bold-double{
+    color: var(--double-color);
+}
+.bold-triple{
+    color: var(--triple-color);
+}
+.bold-lover{
+    color: var(--lovers-color);
 }
