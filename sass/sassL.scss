@@ -1,0 +1,12 @@
+// SCSS 괄호, 세미콜론 X
+// SASS 괄호, 세미콜론 O
+// SASS Solution 자주 쓰는 값은 쉬운 단어(변수)로 치환하자
+// SASS는 compile해서 넣어줘야함
+// 1.수동 sassmeister.com 로 compile한걸 다른 css로 넣어주거나 함
+
+$main-color : #ebb872;
+$sub-color : #285782;
+.box{
+    background-color: $main-color;
+    color: $sub-color;
+}
