@@ -1,0 +1,6 @@
+// _reset.scss 에서 _가 있다면 .css로 컴파일 금지, 냅두셈! 이뜻
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

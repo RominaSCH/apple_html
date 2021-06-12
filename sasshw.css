@@ -1,0 +1,37 @@
+ul {
+  list-style: none;
+}
+ul li {
+  background-color: #fff;
+  height: 70px;
+  padding: 10px;
+  border: 0.2px solid #999999;
+  display: flex;
+  align-items: center;
+}
+ul li:active {
+  background-color: skyblue;
+}
+
+.alert {
+  padding: 15px;
+  border-radius: 5px;
+  width: 50%;
+  color: springgreen;
+  margin: 10px;
+}
+
+.green {
+  background-color: springgreen;
+  color: green;
+}
+
+.blue {
+  background-color: skyblue;
+  color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+  color: goldenrod;
+}

@@ -1,0 +1,35 @@
+ul{
+    list-style: none;
+    li{
+        background-color: #fff;
+        height: 70px;
+        padding: 10px;
+        border: .2px solid #999999;
+        display: flex;
+        align-items: center;
+        &:active{
+            background-color: skyblue;
+        }
+    }
+}
+@mixin alert-color($color, $font-color){
+    background-color: $color;
+    color:$font-color;
+}
+.alert{
+    padding: 15px;
+    border-radius: 5px;
+    width: 50%;
+    color: springgreen;
+    margin: 10px
+
+}
+.green{
+    @include alert-color(springgreen, green);
+}
+.blue{
+    @include alert-color(skyblue, blue);
+}
+.yellow{
+    @include alert-color(yellow, gold);
+}

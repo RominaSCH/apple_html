@@ -3,10 +3,61 @@
 // SASS Solution 자주 쓰는 값은 쉬운 단어(변수)로 치환하자
 // SASS는 compile해서 넣어줘야함
 // 1.수동 sassmeister.com 로 compile한걸 다른 css로 넣어주거나 함
+// 2. 자동 koala app/scout app
+//코드가 줄어들고 개발과 유지보수가 편리해진다.
+//3.@import
+@import "_reset.scss";
 
+// 1. 지정 변수
 $main-color : #ebb872;
 $sub-color : #285782;
 .box{
     background-color: $main-color;
     color: $sub-color;
+}  
+//2. nesting
+.wrapper{
+    div{ //nesting selector대신 indent를 준다.
+        font-size: 30px;
+    }
 }
+.box{
+    &:hover{
+        //.box:hover 이다,
+        transform: scale(1.5);
+    }
+}
+// .box{
+//     :hover{
+//         // 이렇게 쓰면 .box :hover 이 되어버림!! 노노
+//         transform: scale(1.5);
+//     }
+// }
+
+// 4. @extend
+.btn{
+    padding: 10px 16px;
+    background-color: gray;
+    color: #fff;
+}
+.btn-green{
+    @extend %btn;
+    background-color: green;
+}
+// 5. @mixin 단어(){} 반복적인 속성들을 한 단어로 축약한다.
+// 사용할 때는 @include 단어()
+//()안에는 $~~~ , $ 잊지말것
+@mixin basic($size) {
+    font-size: $size;
+    color: goldenrod;
+}
+h1{
+    @include basic(30px);
+}
+h2{
+    @include basic(22px);
+}
+h3{
+    @include basic(15px);
+}
+//중복이 너무 많고 관리하기 힘들 때 SASS SCSS 쓰는 것이다.
