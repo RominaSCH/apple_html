@@ -54,3 +54,45 @@ ul li:active {
   background-color: yellow;
   color: goldenrod;
 }
+
+.row {
+  display: grid;
+  background-color: floralwhite;
+  width: 100%;
+  height: auto;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr;
+  gap: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.col-6,
+.col-4,
+.col-3,
+.col-2,
+.col-1 {
+  background-color: gold;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.col-6 {
+  grid-column: span 6;
+}
+
+.col-4 {
+  grid-column: span 4;
+}
+
+.col-3 {
+  grid-column: span 3;
+}
+
+.col-2 {
+  grid-column: span 2;
+}
+
+.col-1 {
+  grid-column: span 1;
+}

@@ -49,3 +49,44 @@ ul{
 .yellow{
     @include alert-color(yellow, goldenrod);
 }
+
+//-----------------------grid! 도전!-------------------
+.row{
+    display: grid;
+    background-color: lightskyblue;
+    width: 100%;
+    height: auto;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr;
+    gap: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.col-6,
+.col-4,
+.col-3,
+.col-2,
+.col-1{
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 5px;
+}
+@mixin gridRow($columns){
+    grid-column: span $columns;
+}
+.col-6{
+    @include gridRow(6);
+}
+.col-4{
+    @include gridRow(4);
+}
+.col-3{
+    @include gridRow(3);
+}
+.col-2{
+    @include gridRow(2);
+}
+.col-1{
+    @include gridRow(1);
+}
