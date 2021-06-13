@@ -1,3 +1,15 @@
+#email::placeholder{
+    color: slateblue;
+}
+.progress::-webkit-progress-bar{
+    border-radius: 0;
+    border:0;
+    outline: 0;
+}
+.progress::-webkit-progress-value{
+    background-color: tomato;
+}
+
 ul {
   list-style: none;
 }

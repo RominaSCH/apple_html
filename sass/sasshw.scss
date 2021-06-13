@@ -1,3 +1,20 @@
+//Shadow DOM 개발자들 편하라고 숨겨둔 HTML
+// Document Object Model DOM!
+// 검사에서 F1누르고 Show user agent shadow DOM 체크하고 나서 까고까면 보임!
+// -webkit- 옛버전 크롬 호환성
+// -moz- 옛버전 파이어폭스 호환성
+#email::placeholder{
+    color: slateblue;
+}
+.progress::-webkit-progress-bar{
+    border-radius: 0;
+    border:0;
+    outline: 0;
+}
+.progress::-webkit-progress-value{
+    background-color: tomato;
+}
+
 ul{
     list-style: none;
     li{
@@ -21,8 +38,7 @@ ul{
     border-radius: 5px;
     width: 50%;
     color: springgreen;
-    margin: 10px
-
+    margin: 10px;
 }
 .green{
     @include alert-color(springgreen, green);
@@ -31,5 +47,5 @@ ul{
     @include alert-color(skyblue, blue);
 }
 .yellow{
-    @include alert-color(yellow, gold);
+    @include alert-color(yellow, goldenrod);
 }
