@@ -59,30 +59,38 @@ body{
 nav{
     position: fixed;
     top: 0;
-    left: 0;
+    left: -190px;
     background-color: darkslategray;
     height: 100%;
     width: 300px;
     color: #fff;
-    transform: translateX(-190px);
+    transition: .5s ease-in-out;
 }
 
 .menu{
     position: relative;
     width: 100%;
     height: 100%;
-    transition: .5s ease-in-out;
 }
-.menu:hover{
-    transform: translateX(190px);
-}
+
 .menu h1{
     position: absolute;
     top: 20px;
     right: 20px;
+    transition: .5s ease-in-out;
 }
 .menu h3{
     position: absolute;
-    top: 50px;
+    top: 80px;
     left: 0px;
+    transition: .5s ease-in-out;
+}
+nav:hover{
+    transform: translateX(190px);
+}
+nav:hover h1{
+    transform: translateX(-100px);
+}
+nav:hover h3{
+    transform:translateX(110px);
 }
