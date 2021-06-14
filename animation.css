@@ -41,11 +41,15 @@ body{
     animation: rotateBtn .7s ease-in-out;
 }
 @keyframes changeX{
+    0%{
+        transform:rotateZ(0deg);
+    }
     10%{
         transform: rotateZ(-30deg);
-    }
+    } 
     100%{
-        transform: rotateZ(45deg);
+        transform: rotateZ(45deg) scale(2);
+        
     }
 }
 .change-x svg{
