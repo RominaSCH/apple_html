@@ -22,5 +22,5 @@ body{
     position: sticky;
     top: 100px;/*스크롤 내렸을 때 Viewport(내 화면)에서 상단 100px 아래 위차*/
     font-size: 50px;
-    float: right;/*sticky는 좌표(top, left 등 꼭 써줘야함)*/
+    float: right;/*sticky는 좌표(top, left 등 꼭 써줘야함), 부모박스가 길어야함*/
 }
