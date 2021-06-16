@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Last HW</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="last.css">
+<body>
+    <nav>
+        <div class="icon">
+            <div class="icon__title">Home</div>
+            <i class="fas fa-igloo"></i></div>
+        <div class="icon">
+            <div class="icon__title">Services</div>
+            <i class="fas fa-headset"></i></div>
+        <div class="icon">
+            <div class="icon__title">Alerts</div>
+            <i class="fas fa-flag"></i></div>
+        <div class="icon">
+            <div class="icon__title">Charts</div>
+            <i class="fas fa-chart-pie"></i></div>
+    </nav>
+    <header>
+        <div class="search-bar">
+            <input id="search" type="text" placeholder="Search"/>
+            <button class="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="header-info">
+            <div class="header-icon">
+                <i class="fas fa-bell"></i>
+                <div class="header-icon__badge">5</div>
+            </div>
+            <div class="header-icon"><i class="fas fa-envelope"></i>
+                <div class="header-icon__badge">9</div></div>
+            <div class="header-user">Romina</div>
+        </div>
+    </header>
+
+    <main>
+        <h1>Dashboard</h1>
+        <div class="dashboard row">
+            <div class="dash-card blue-bd col-md-3">
+                <div class="dash-card__info">
+                    <h3>Earning (Monthly)</h3>
+                    <p>$400,000</p>
+                </div>
+                <div class="dash-card__icon"><i class="fas fa-calendar-alt"></i></div>
+            </div>
+            <div class="dash-card green-bd col-md-3">
+                <div class="dash-card__info">
+                    <h3>Earning (Annual)</h3>
+                    <p>$800,000</p>
+                </div>
+                <div class="dash-card__icon"><i class="far fa-calendar-alt"></i></div>
+            </div>
+            <div class="dash-card violet-bd col-md-3">
+                <div class="dash-card__info">
+                    <h3>Tasks</h3>
+                    <p>13</p>
+                </div>
+                <div class="dash-card__icon"><i class="fas fa-list-ul"></i></div>
+            </div>
+            <div class="dash-card yellow-bd col-md-3">
+                <div class="dash-card__info">
+                    <h3>Requests</h3>
+                    <p>26</p>
+                </div>
+                <div class="dash-card__icon"><i class="fas fa-comment-alt"></i></div>
+            </div>
+        </div>
+
+        <div class="overview-container">
+            <div class="overview__title">Earnings Overview</div>
+            <div class="overview__chart"></div>
+        </div>
+        <div class="tasks-container">
+            <div class="tasks__title">Tasks</div>
+            <div class="tasks__list">
+                <div class="task-wrapper">
+                    <div class="task__name">Borrowed Items</div>
+                    <div class="task__badge">14</div>
+                </div>
+                <div class="task-wrapper">
+                    <div class="task__name">Trello requests</div>
+                    <div class="task__badge">2</div>
+                </div>
+                <div class="task-wrapper">
+                    <div class="task__name">Marked Comments</div>
+                    <div class="task__badge">1</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://kit.fontawesome.com/6c2f90a09b.js" crossorigin="anonymous" ></script>
+</body>
+</html>
