@@ -1,7 +1,9 @@
 .main-btn{
     padding: 15px;
+    border-radius: 7px;
     font-size: 20px;
     border: none;
+    color: #fff;
     cursor: pointer;
 }
 .red-btn{
@@ -9,4 +11,5 @@
 }
 .blue-btn{
     background-color: royalblue;
-}  /* OOCSS Object Oriented CSS 라고 불리는 작성 관습, 평소 하던거*/
+}  /* OOCSS Object Oriented CSS 라고 불리는 작성 관습, 평소 하던거
+font-size같은 곳에서 주로 사용된다. */
